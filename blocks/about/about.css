@@ -1,0 +1,61 @@
+.about {
+	max-width: 1280px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: 1fr 1fr 1fr;
+	margin-top: 100px;
+}
+
+.about__background {
+	grid-area: 1 / 1 / 4 / 2;
+	width: 100%;
+	max-height: calc(100vh - 100px);
+	opacity: 0.6;
+	object-fit: cover;
+}
+
+.about__overlay {
+	grid-area: 1 / 1 / 4 / 2;
+	background-color: #2A2C2F;
+}
+
+.about__article {
+	z-index: 1;
+	grid-area: 1 / 1 / 4 / 2;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+}
+
+.about__title {
+	font-size: 38px;
+	width: 720px;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+.about__subtitle {
+	font-size: 26px;
+	margin: 0 auto;
+}
+
+.about__description {
+	z-index: 1;
+	grid-area: 3 / 1 / 4 / 2;
+	margin: 0;
+	align-items: center;
+	display: flex;
+	justify-content: space-around;
+	color: white;
+	list-style: none;
+	padding: 0;
+}
+
+.about__advantage {
+	font-size: 20px;
+	max-width: 240px;
+	text-align: center;
+}
